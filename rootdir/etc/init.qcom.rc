@@ -25,8 +25,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import /system/vendor/etc/init/hw/init.target.rc
-import /system/vendor/etc/init/hw/init.qcom.usb.rc
+import /vendor/etc/init/hw/init.qcom.usb.rc
+#import init.target.rc	#import /vendor/etc/init/hw/init.target.rc
+#import init.carrier.rc	#import /vendor/etc/init/hw/init.carrier.rc
 
 on init
 
