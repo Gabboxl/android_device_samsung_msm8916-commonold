@@ -316,7 +316,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
     twrp.fstab \
-    ueventd.qcom.rc
+    ueventd.rc
 
 #forze da levare?
 PRODUCT_COPY_FILES += \
