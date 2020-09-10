@@ -561,3 +561,6 @@ PRODUCT_PACKAGES += \
 # ZRAM - Size in MB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.zram.size=128
+    
+# Common Android Go configurations
+$(call inherit-product, build/target/product/go_defaults.mk)
