@@ -581,3 +581,7 @@ $(call inherit-product, build/target/product/go_defaults.mk)
 #    dalvik.vm.heaptargetutilization=0.75 \
 #    dalvik.vm.heapminfree=512k \
 #    dalvik.vm.heapmaxfree=8m
+
+
+# Disable Scudo to save RAM.
+#PRODUCT_DISABLE_SCUDO := true
