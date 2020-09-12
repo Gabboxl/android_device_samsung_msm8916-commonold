@@ -185,6 +185,18 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/mm-qcamera-daemon=22 \
     /system/vendor/bin/hw/rild=27
 
+# Dexpreopt
+ifeq ($(HOST_OS),linux)
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_DEBUG_INFO := false
+USE_DEX2OAT_DEBUG := false
+DONT_DEXPREOPT_PREBUILTS := true
+WITH_DEXPREOPT_PIC := true
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+endif
+endif
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
@@ -243,6 +255,8 @@ endif
 # SELinux
 # include device/qcom/sepolicy-legacy/sepolicy.mk
 
+#BOARD_SEPOLICY_DIRS += device/samsung/msm8916-common/sepolicy
+#PLAT_PRIVATE_POLICY += device/samsung/msm8916-common/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy_tmp
