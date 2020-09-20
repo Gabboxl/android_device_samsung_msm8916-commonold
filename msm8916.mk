@@ -227,7 +227,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8916
 
 # Media configurations
-ifneq ($(TARGET_BOARD_PLATFORM_VARIANT),msm8929)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
