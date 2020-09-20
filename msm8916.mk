@@ -411,17 +411,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Common Android Go configurations
 $(call inherit-product, build/target/product/go_defaults.mk)
 
-
-
-# Dalvik properties
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    dalvik.vm.heapstartsize=8m \
-#    dalvik.vm.heapgrowthlimit=192m \
-#    dalvik.vm.heapsize=256m \
-#    dalvik.vm.heaptargetutilization=0.75 \
-#    dalvik.vm.heapminfree=512k \
-#    dalvik.vm.heapmaxfree=8m
-
-
 # Disable Scudo to save RAM.
 #PRODUCT_DISABLE_SCUDO := true
