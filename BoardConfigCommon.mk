@@ -117,7 +117,11 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-BOARD_ROOT_EXTRA_FOLDERS := firmware firmware-modem persist efs
+BOARD_ROOT_EXTRA_FOLDERS := \
+    firmware \
+    firmware-modem \
+    efs \
+    persist
 BOARD_ROOT_EXTRA_SYMLINKS := /data/tombstones:/tombstones
 
 # FM
