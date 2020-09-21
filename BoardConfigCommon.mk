@@ -264,13 +264,13 @@ endif
 #endif
 
 # SELinux
-# include device/qcom/sepolicy-legacy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += device/samsung/msm8916-common/sepolicy
-#PLAT_PRIVATE_POLICY += device/samsung/msm8916-common/sepolicy/private
+BOARD_SEPOLICY_DIRS += device/samsung/msm8916-common/sepolicy
+PLAT_PRIVATE_POLICY += device/samsung/msm8916-common/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
-BOARD_SEPOLICY_DIRS += \
-    $(COMMON_PATH)/sepolicy_tmp
+#BOARD_SEPOLICY_DIRS += \
+#    $(COMMON_PATH)/sepolicy_tmp
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
