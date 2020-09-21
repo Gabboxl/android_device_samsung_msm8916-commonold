@@ -21,7 +21,6 @@ TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
 # Inherit from common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
-BUILD_BROKEN_DUP_RULES := true
 
 # Architecture/platform
 BOARD_VENDOR := samsung
@@ -38,6 +37,8 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a53
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
+# Allow overriding commands during build
+BUILD_BROKEN_DUP_RULES := true
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
@@ -109,7 +110,7 @@ endif
 
 # Filesystems
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
-BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE   := ext4
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
