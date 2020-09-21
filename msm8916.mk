@@ -401,4 +401,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, build/target/product/go_defaults.mk)
 
 # Disable Scudo to save RAM.
-#PRODUCT_DISABLE_SCUDO := true
+PRODUCT_DISABLE_SCUDO := true
