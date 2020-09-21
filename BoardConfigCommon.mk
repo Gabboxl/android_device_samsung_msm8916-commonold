@@ -43,7 +43,8 @@ BUILD_BROKEN_DUP_RULES := true
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Audio
-AUDIO_CONFIG_PATH := hardware/qcom-caf/msm8916/audio/configs
+#probably wuesto wua sotto è il problema
+#AUDIO_CONFIG_PATH := hardware/qcom-caf/msm8916/audio/configs
 AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := false
