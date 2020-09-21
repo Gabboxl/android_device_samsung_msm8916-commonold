@@ -285,7 +285,7 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libgeofence.so|liblocadapterbase_shim.so
 
 # Snapdragon LLVM
-TARGET_USE_SDCLANG := true
+#TARGET_USE_SDCLANG := true
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
