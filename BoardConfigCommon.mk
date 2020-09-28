@@ -244,8 +244,8 @@ BOARD_USES_MMCUTILS := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA	:= true
 TARGET_RECOVERY_DENSITY	:= hdpi
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/recovery.fstab
-#TARGET_RECOVERY_FSTAB := device/samsung/msm8916-common/rootdir/etc/fstab.qcom
+#TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/msm8916-common/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
